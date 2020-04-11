@@ -103,7 +103,10 @@
       </div>
       <div class="row">
         <div class="col s12 l4 offset-l1 push-l7">
-          <img src="img/char.jpg" alt="" class="responsive-img materialboxed" />
+          <img src="img/char.jpg" alt="" class="responsive-img materialboxed" id="charPic"/>
+          <audio controls id="zaz">
+            <source src="audio/Charmander Voice Reel (Short).mp3" type="audio/mpeg" id = "charSound">
+          </audio>
        </a>
         </div>
         <div class="col s12 l6 offset-l1 pull-l5 right-align">
@@ -126,7 +129,10 @@
       </div>
       <div class="row">
         <div class="col s12 l4">
-          <img src="img/sq.jpg" alt="" class="responsive-img materialboxed" />
+          <img src="img/sq.jpg" alt="" class="responsive-img materialboxed" id="sqPic"/>
+          <audio controls id="aaz">
+            <source src="audio/Squirtle Sound Effect.mp3" type="audio/mpeg" id = "sqSound">
+          </audio>
         </div>
         <div class="col s12 l6">
             <div class="card">
@@ -148,7 +154,10 @@
       </div>
       <div class="row">
         <div class="col s12 l4 offset-l1 push-l7">
-          <img src="img/bul.jpg" alt="" class="responsive-img materialboxed" />
+          <img src="img/bul.jpg" alt="" class="responsive-img materialboxed" id="bulPic"/>
+          <audio controls id="zaa">
+            <source src="audio/bulsound.mp3" type="audio/mpeg" id = "bulSound">
+          </audio>
         </div>
         <div class="col s12 l6 offset-l1 pull-l5 right-align">
             <div class="card">
@@ -316,7 +325,39 @@
         e.preventDefault()
         pikaPic.setAttribute('src', 'img/pika.jpg')
       };
-
+      const charPic = document.querySelector('#charPic');
+      const zaz = document.querySelector('#zaz');
+      zaz.onplay = (e) => {
+        e.preventDefault()
+        charPic.setAttribute('src', 'img/source.gif')
+      };
+ 
+      zaz.onpause = (e) => {
+        e.preventDefault()
+        charPic.setAttribute('src', 'img/char.jpg')
+      };
+      const sqPic = document.querySelector('#sqPic');
+      const aaz = document.querySelector('#aaz');
+      aaz.onplay = (e) => {
+        e.preventDefault()
+        sqPic.setAttribute('src', 'img/source (1).gif')
+      };
+ 
+      aaz.onpause = (e) => {
+        e.preventDefault()
+        sqPic.setAttribute('src', 'img/sq.jpg')
+      };
+      const bulPic = document.querySelector('#bulPic');
+      const zaa = document.querySelector('#zaa');
+      zaa.onplay = (e) => {
+        e.preventDefault()
+        bulPic.setAttribute('src', 'img/bulgiffy.gif')
+      };
+ 
+      zaa.onpause = (e) => {
+        e.preventDefault()
+        bulPic.setAttribute('src', 'img/bul.jpg')
+      };
     });
   </script>
 </body>
