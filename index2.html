@@ -2,6 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+    />
     <title>Animation</title>
     <style type="text/css">
       canvas {
@@ -14,6 +31,24 @@
     </style>
   </head>
   <body>
+    <header>
+      <nav class="nav-wrapper transparent">
+        <div class="container">
+          <a href="index.html" class="brand-logo black-text">Pokemons</a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons black-text">menu</i>
+          </a>
+          <!-- <ul class="right hide-on-med-and-down">
+            <li><a href="index.html" class="green-text">Favorite Pokemons</a></li>
+           
+          </ul>
+          <ul class="sidenav grey lighten-2" id="mobile-menu">
+            <li><a href="#photos" class="green-text">Favorite Pokemons</a></li>
+         -->
+          <!-- </ul> -->
+        </div>
+      </nav>
+    </header>
     <canvas></canvas>
     <script src="canvas.js"></script>
   </body>
