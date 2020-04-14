@@ -5,43 +5,12 @@ canvas.height = window.innerHeight;
 
 var c = canvas.getContext("2d");
 
-// c.fillStyle = 'rgba(255, 0, 0, 0.5)';
-// c.fillRect(100, 100, 100, 100);
-// c.fillStyle = 'rgba(0, 0, 255, 0.5)';
-// c.fillRect(400, 100, 100, 100);
-// c.fillStyle = 'rgba(0, 255, 0, 0.5)';
-// c.fillRect(300, 300, 100, 100);
-// console.log(canvas);
-
-// Line
-// c.beginPath();
-// c.moveTo(50, 300);
-// c.lineTo(300, 100);
-// c.lineTo(400, 300);
-// c.strokeStyle =  "#fa34a3";
-// c.stroke();
-
-// Arc / Circle
-// c.beginPath();
-// c.arc(300, 300, 30, 0, Math.PI * 2, false);
-// c.strokeStyle = 'blue';
-// c.stroke();
-
-// for (var i = 0; i < 100; i++) {
-//     var x = Math.random() * window.innerWidth;
-//     var y = Math.random() * window.innerHeight;
-//     c.beginPath();
-//     c.arc(x, y, 30, 0, Math.PI * 2, false);
-//     c.strokeStyle = 'blue';
-//     c.stroke();
-// }
 var mouse = {
   x: undefined,
   y: undefined,
 };
 
-var maxRadius = 40;
-// var minRadius = 2;
+var maxRadius = 50;
 
 var colorArray = ["#2C3E50", "#E74C3C", "#ECF0F1", "#3498DB", "#2980B9"];
 
@@ -89,10 +58,10 @@ function Circle(x, y, dx, dy, radius) {
 
     // interactivity
     if (
-      mouse.x - this.x < 50 &&
-      mouse.x - this.x > -50 &&
-      mouse.y - this.y < 50 &&
-      mouse.y - this.y > -50
+      mouse.x - this.x < 45 &&
+      mouse.x - this.x > -45 &&
+      mouse.y - this.y < 45 &&
+      mouse.y - this.y > -45
     ) {
       if (this.radius < maxRadius) {
         this.radius += 1;
