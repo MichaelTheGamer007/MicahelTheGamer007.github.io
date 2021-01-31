@@ -1,0 +1,359 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+    />
+    <title>Pokemons</title>
+    <style>
+      header {
+        background: url(img/wall2.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 1000px;
+      }
+      @media screen and (max-width: 670px) {
+        header {
+          min-height: 500px;
+        }
+      }
+      .section {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+      }
+      .tabs .indicator{
+      background-color: rgb(255, 80, 80);
+      }
+      .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: rgb(206, 248, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <nav class="nav-wrapper white">
+        <div class="container">
+          <a href="#" class="brand-logo black-text">Pokemons</a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons black-text">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#photos" class="green-text">最喜欢的宠物小精灵</a></li>
+            <li><a href="https://scratch.mit.edu/projects/383336406/" class="red-text">看看这个很酷的游戏！</a></li>
+            <li><a href="#services" class="red-text">关于我们</a></li>
+            <li><a href="#contact" class="blue-text">联系</a></li>
+            <li><a href="index.html" class="black-text">English</a></li>
+            <li><a href="index2.html" class="black-text">网站 2</a></li>
+            <li><a href="index3.html" class="black-text">网站 3</a></li>
+            </ul>
+          <ul class="sidenav grey lighten-2" id="mobile-menu">
+            <li><a href="#photos" class="green-text">最喜欢的宠物小精灵</a></li>
+            <li><a href="https://scratch.mit.edu/projects/383336406/" class="red-text">看看这个很酷的游戏！</a></li>
+            <li><a href="#services" class="red-text">关于我们</a></li>
+            <li><a href="#contact" class="blue-text">联系</a></li>
+            <li><a href="index.html" class="black-text">English</a></li>
+            <li><a href="index2.html" class="black-text">网站 2</a></li>
+            <li><a href="index3.html" class="black-text">网站 3</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- photo / grid -->
+    <section class="container section scrollspy" id="photos">
+      <div class="row">
+        <div class="col s12 l4">
+          <img src="img/pika.jpg" alt="" class="responsive-img materialboxed" id = "pikaPic"/>
+          <audio controls id="zzz">
+            <source src="audio/pikachu sounds.mp3" type="audio/mpeg" id = "pikaSound">
+          </audio>
+        </div>
+        <div class="col s12 l6">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/pika2.png" alt="">
+                <a href="" class="halfway-fab btn-floating pink pulse">
+                  <i class="material-icons">favorite</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <span class="card-title">皮卡丘的演变</span>
+                <p>皮卡丘被认为是神奇宝贝的一种。皮卡丘重13磅，高1英尺，高4英寸。皮卡丘是一个黄色的字符。女性皮卡丘的尾巴末端有凹痕。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4 offset-l1 push-l7">
+          <img src="img/char.jpg" alt="" class="responsive-img materialboxed" id="charPic"/>
+          <audio controls id="zaz">
+            <source src="audio/Charmander Voice Reel (Short).mp3" type="audio/mpeg" id = "charSound">
+          </audio>
+        </div>
+        <div class="col s12 l6 offset-l1 pull-l5 right-align">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/char2.jpg" alt="">
+                <a href="" class="halfway-fab btn-floating pink pulse">
+                  <i class="material-icons">favorite</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <span class="card-title">小火龙的演变</span>
+                <p>小火龙被称为火炬手神奇宝贝。 小火龙是关东土生土长的小型双足蜥蜴类神奇宝贝。他们有蓝眼睛，橘红色的皮肤，三爪的脚趾，黄色的腹部，以及覆盖每个脚底大部分的单个黄色护垫。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4">
+          <img src="img/sq.jpg" alt="" class="responsive-img materialboxed" id="sqPic"/>
+          <audio controls id="aaz">
+            <source src="audio/Squirtle Sound Effect.mp3" type="audio/mpeg" id = "sqSound">
+          </audio>
+        </div>
+        <div class="col s12 l6">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/sq2.jpg" alt="">
+                <a href="" class="halfway-fab btn-floating pink pulse">
+                  <i class="material-icons">favorite</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <span class="card-title">杰尼龟的演变</span>
+                <p>圆形的形状和表面上的凹槽使水的阻力最小化，从而使杰尼龟能够高速游泳。当它的长颈缩入外壳时，它会用力喷出水。出生后，其背部肿胀并变硬为贝壳。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4 offset-l1 push-l7">
+          <img src="img/bul.jpg" alt="" class="responsive-img materialboxed" id="bulPic"/>
+          <audio controls id="zaa">
+            <source src="audio/bulsound.mp3" type="audio/mpeg" id = "bulSound">
+          </audio>
+        </div>
+        <div class="col s12 l6 offset-l1 pull-l5 right-align">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/bul2.jpg" alt="">
+                <a href="" class="halfway-fab btn-floating pink pulse">
+                  <i class="material-icons">favorite</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <span class="card-title">妙蛙种子的演变</span>
+                <p>妙蛙种子是动漫系列中第三大最常见的神奇宝贝，其喵喵位居第二，显然是皮卡丘位居第一。妙蛙种子主要是雄性物种，占所有捕获量的87.5％是雄性，其余仅占12.5％的雌性。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/wall3.jpg" alt="" class="responsive-img">
+      </div>
+    </div>
+    <!-- services / tabs -->
+    <section class="section container scrollspy" id="services">
+      <div class="row">
+        <div class="col s12 l4">
+          <h2 class="indigo-text text-darken-4">关于我...</h2>
+          <p>我叫Michael，我10岁。我制作了这个网站，所以我可以体验编码的难度。我与爸爸妈妈和姐姐过着幸福的生活。</p>
+        </div>
+        <div class="col s12 l6 offset-l2">
+          <!-- tabs -->
+          <ul class="tabs">
+            <li class="tab col s6">
+              <a href="#photography" class="active indigo-text text-darken-4">摄影</a>
+            </li>
+            <li class="tab col s6">
+              <a href="#editing" class="indigo-text text-darken-4">编辑中</a>
+            </li>
+          </ul>
+          <div id="photography" class="col s12">
+              <p class="flow-text indigo-text text-darken-4">摄影</p>
+              <p>我使用的照片都是神奇宝贝，因为我的妹妹启发了我喜欢神奇宝贝，现在我也喜欢所有这些。</p>
+          </div>
+          <div id="editing" class="col s12">
+              <p class="flow-text indigo-text text-darken-4">编辑中</p>
+              <p>我最喜欢的宠物小精灵是皮卡丘，你叫什么?</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/wall.jpg" alt="" class="responsive-img">
+      </div>
+    </div>
+    <!-- contact form -->
+    <section class="section container scrollspy" id="contact">
+      <div class="row">
+        <div class="col s12 l5">
+          <h2 class="indigo-text text-darken-4">保持联系</h2>
+          <p>我的电子邮件是mastermichaelgreat@gmail.com，您可以在上午9:00到下午6:00之间的任何时间给我发送电子邮件，谢谢！</p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+          <form>
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input type="email" id="email">
+              <label for="email">你的邮件</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+              <label for="message">你的信息</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">date_range</i>
+              <input type="text" id="date" class="datepicker">
+              <label for="date">选择您需要我的日期...</label>
+            </div>
+            <div class="input-field">
+              <p>所需服务：</p>
+              <p>
+                <label>
+                  <input type="checkbox">
+                  <span>我喜欢口袋妖怪</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox">
+                  <span>照片编辑</span>
+                </label>
+              </p>
+            </div>
+            <div class="input-field center">
+              <button class="btn">皮卡提交皮卡</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5>给大家的笔记</h5>
+            <p>我制作了这个网站，所以我可以体验编码的难度。我希望每个人都喜欢我的网站。</p>
+            </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">连接</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#">脸书</a></li>
+              <li><a class="grey-text text-lighten-3" href="#">推特</a></li>
+              <li><a class="grey-text text-lighten-3" href="#">领英</a></li>
+              <li><a class="grey-text text-lighten-3" href="#">照片墙</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+        <div class="container center-align">&copy; 2020年度最棒的宠物小精灵</div>
+      </div>
+    </footer>
+      <!-- Compiled and minified JavaScript -->
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+
+   
+      const pikaPic = document.querySelector('#pikaPic');
+      const zzz = document.querySelector('#zzz');
+      zzz.onplay = (e) => {
+        e.preventDefault()
+        pikaPic.setAttribute('src', 'img/tenor.gif')
+      };
+ 
+      zzz.onpause = (e) => {
+        e.preventDefault()
+        pikaPic.setAttribute('src', 'img/pika.jpg')
+      };
+      const charPic = document.querySelector('#charPic');
+      const zaz = document.querySelector('#zaz');
+      zaz.onplay = (e) => {
+        e.preventDefault()
+        charPic.setAttribute('src', 'img/source.gif')
+      };
+ 
+      zaz.onpause = (e) => {
+        e.preventDefault()
+        charPic.setAttribute('src', 'img/char.jpg')
+      };
+      const sqPic = document.querySelector('#sqPic');
+      const aaz = document.querySelector('#aaz');
+      aaz.onplay = (e) => {
+        e.preventDefault()
+        sqPic.setAttribute('src', 'img/source (1).gif')
+      };
+ 
+      aaz.onpause = (e) => {
+        e.preventDefault()
+        sqPic.setAttribute('src', 'img/sq.jpg')
+      };
+      const bulPic = document.querySelector('#bulPic');
+      const zaa = document.querySelector('#zaa');
+      zaa.onplay = (e) => {
+        e.preventDefault()
+        bulPic.setAttribute('src', 'img/bulgiffy.gif')
+      };
+ 
+      zaa.onpause = (e) => {
+        e.preventDefault()
+        bulPic.setAttribute('src', 'img/bul.jpg')
+      };
+    });
+  </script>
+</body>
+</html>

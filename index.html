@@ -1,0 +1,359 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+    />
+    <title>Pokemons</title>
+    <style>
+      header {
+        background: url(img/wall2.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 1000px;
+      }
+      @media screen and (max-width: 670px) {
+        header {
+          min-height: 500px;
+        }
+      }
+      .section {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+      }
+      .tabs .indicator{
+      background-color: rgb(255, 80, 80);
+      }
+      .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: rgb(206, 248, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <nav class="nav-wrapper white">
+        <div class="container">
+          <a href="#" class="brand-logo black-text">Pokemons</a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons black-text">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#photos" class="green-text">Favorite Pokemons</a></li>
+            <li><a href="https://scratch.mit.edu/projects/383336406/" class="red-text">Check Out This Cool Game!</a></li>
+            <li><a href="#services" class="red-text">About Us</a></li>
+            <li><a href="#contact" class="blue-text">Contact</a></li>
+            <li><a href="chinese.html" class="black-text">中文</a></li>
+            <li><a href="index2.html" class="black-text">Website 2</a></li>
+            <li><a href="index3.html" class="black-text">Website 3</a></li>
+          </ul>
+          <ul class="sidenav grey lighten-2" id="mobile-menu">
+            <li><a href="#photos" class="green-text">Favorite Pokemons</a></li>
+            <li><a href="https://scratch.mit.edu/projects/383336406/" class="green-text">Check Out This Cool Game!</a></li>
+            <li><a href="#services" class="red-text">About Us</a></li>
+            <li><a href="#contact" class="blue-text">Contact</a></li>
+            <li><a href="chinese.html" class="black-text">中文</a></li>
+            <li><a href="index2.html" class="black-text">Website 2</a></li>
+            <li><a href="index3.html" class="black-text">Website 3</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- photo / grid -->
+    <section class="container section scrollspy" id="photos">
+      <div class="row">
+        <div class="col s12 l4">
+          <img src="img/pika.jpg" alt="" class="responsive-img materialboxed" id = "pikaPic"/>
+          <audio controls id="zzz">
+            <source src="audio/pikachu sounds.mp3" type="audio/mpeg" id = "pikaSound">
+          </audio>
+        </div>
+        <div class="col s12 l6">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/pika2.png" alt="">
+                <a href="" class="halfway-fab btn-floating pink pulse">
+                  <i class="material-icons">favorite</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <span class="card-title">Evolution of Pikachu</span>
+                <p>Pikachu are considered to be a Pokémon mouse species. A Pikachu weighs 13 pounds and stands at 1 foot, 4 inches in height. Pikachu is a yellow character. Female Pikachu's have a dent in the end of their tails.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4 offset-l1 push-l7">
+          <img src="img/char.jpg" alt="" class="responsive-img materialboxed" id="charPic"/>
+          <audio controls id="zaz">
+            <source src="audio/Charmander Voice Reel (Short).mp3" type="audio/mpeg" id = "charSound">
+          </audio>
+       </a>
+        </div>
+        <div class="col s12 l6 offset-l1 pull-l5 right-align">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/char2.jpg" alt="">
+                <a href="" class="halfway-fab btn-floating pink pulse">
+                  <i class="material-icons">favorite</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <span class="card-title">Evolution of Charmander</span>
+                <p>Charmander is known as the torch Pokémon. Charmander are small, bipedal lizard-like Pokémon native to Kanto. They have blue eyes, red-orange skin, three-clawed toes, yellow bellies, and a single yellow pad covering most of the bottom of each foot.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4">
+          <img src="img/sq.jpg" alt="" class="responsive-img materialboxed" id="sqPic"/>
+          <audio controls id="aaz">
+            <source src="audio/Squirtle Sound Effect.mp3" type="audio/mpeg" id = "sqSound">
+          </audio>
+        </div>
+        <div class="col s12 l6">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/sq2.jpg" alt="">
+                <a href="" class="halfway-fab btn-floating pink pulse">
+                  <i class="material-icons">favorite</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <span class="card-title">Evolution of Squirtle</span>
+                <p>Its rounded shape and the grooves on its surface minimize resistance in water, enabling Squirtle to swim at high speeds. When it retracts its long neck into its shell, it squirts out water with vigorous force. After birth, its back swells and hardens into a shell.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4 offset-l1 push-l7">
+          <img src="img/bul.jpg" alt="" class="responsive-img materialboxed" id="bulPic"/>
+          <audio controls id="zaa">
+            <source src="audio/bulsound.mp3" type="audio/mpeg" id = "bulSound">
+          </audio>
+        </div>
+        <div class="col s12 l6 offset-l1 pull-l5 right-align">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/bul2.jpg" alt="">
+                <a href="" class="halfway-fab btn-floating pink pulse">
+                  <i class="material-icons">favorite</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <span class="card-title">Evolution of Bulbasaur</span>
+                <p>Bulbasaur is the third most commonly seen Pokémon in the anime series, with Meowth being number two, and obviously Pikachu at number 1. Bulbasaur is mostly a male species, with 87.5% of all captures being male, with the rest being only 12.5% female.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/wall3.jpg" alt="" class="responsive-img">
+      </div>
+    </div>
+    <!-- services / tabs -->
+    <section class="section container scrollspy" id="services">
+      <div class="row">
+        <div class="col s12 l4">
+          <h2 class="indigo-text text-darken-4">About Me..</h2>
+          <p>My name is Michael, I am 10 years old.I Made this website so I could have experience about how hard it is to code.I Live a happy life with my Mom and Dad and also with my Sister.</p>  
+          </div>
+        <div class="col s12 l6 offset-l2">
+          <!-- tabs -->
+          <ul class="tabs">
+            <li class="tab col s6">
+              <a href="#photography" class="active indigo-text text-darken-4">Photography</a>
+            </li>
+            <li class="tab col s6">
+              <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+            </li>
+          </ul>
+          <div id="photography" class="col s12">
+              <p class="flow-text indigo-text text-darken-4">Photography</p>
+              <p>The pictures I used are all pokemon because my sister inspired me to like pokemon and now I do like all of them.</p>
+          </div>
+          <div id="editing" class="col s12">
+              <p class="flow-text indigo-text text-darken-4">Editing</p>
+              <p>My favourite pokemon is Pikachu, what's yours?</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/wall.jpg" alt="" class="responsive-img">
+      </div>
+    </div>
+    <!-- contact form -->
+    <section class="section container scrollspy" id="contact">
+      <div class="row">
+        <div class="col s12 l5">
+          <h2 class="indigo-text text-darken-4">Get in Touch</h2>
+          <p>My email is mastermichaelgreat@gmail.com you can email me at any time in the day from 9:00 am to 6:00 pm, Thanks!</p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+          <form>
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input type="email" id="email">
+              <label for="email">Your Email</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">date_range</i>
+              <input type="text" id="date" class="datepicker">
+              <label for="date">Choose a date you need me for...</label>
+            </div>
+            <div class="input-field">
+              <p>Services required:</p>
+              <p>
+                <label>
+                  <input type="checkbox" required>
+                  <span>I like Pokemons</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" required>
+                  <span>I have a Pokedex</span>
+                </label>
+              </p>
+            </div>
+            <div class="input-field center">
+              <button class="btn">Pika Submit Pika</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5>A NOTE FOR EVERYONE</h5>
+            <p>I Made this website so I could have experience about how hard it is to code.I hope everyone likes my website.</p>
+            </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
+              <li><a class="grey-text text-lighten-3" href="#">Twitter</a></li>
+              <li><a class="grey-text text-lighten-3" href="#">Linked In</a></li>
+              <li><a class="grey-text text-lighten-3" href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+        <div class="container center-align">&copy; 2020 Best Pokemons</div>
+      </div>
+    </footer>
+    <!-- Compiled and minified JavaScript -->
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+
+   
+      const pikaPic = document.querySelector('#pikaPic');
+      const zzz = document.querySelector('#zzz');
+      zzz.onplay = (e) => {
+        e.preventDefault()
+        pikaPic.setAttribute('src', 'img/tenor.gif')
+      };
+ 
+      zzz.onpause = (e) => {
+        e.preventDefault()
+        pikaPic.setAttribute('src', 'img/pika.jpg')
+      };
+      const charPic = document.querySelector('#charPic');
+      const zaz = document.querySelector('#zaz');
+      zaz.onplay = (e) => {
+        e.preventDefault()
+        charPic.setAttribute('src', 'img/source.gif')
+      };
+ 
+      zaz.onpause = (e) => {
+        e.preventDefault()
+        charPic.setAttribute('src', 'img/char.jpg')
+      };
+      const sqPic = document.querySelector('#sqPic');
+      const aaz = document.querySelector('#aaz');
+      aaz.onplay = (e) => {
+        e.preventDefault()
+        sqPic.setAttribute('src', 'img/source (1).gif')
+      };
+ 
+      aaz.onpause = (e) => {
+        e.preventDefault()
+        sqPic.setAttribute('src', 'img/sq.jpg')
+      };
+      const bulPic = document.querySelector('#bulPic');
+      const zaa = document.querySelector('#zaa');
+      zaa.onplay = (e) => {
+        e.preventDefault()
+        bulPic.setAttribute('src', 'img/bulgiffy.gif')
+      };
+ 
+      zaa.onpause = (e) => {
+        e.preventDefault()
+        bulPic.setAttribute('src', 'img/bul.jpg')
+      };
+    });
+  </script>
+</body>
+</html>
